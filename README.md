@@ -1,16 +1,26 @@
-# fancy_gallery
+# Immersive Gallery App
 
-A new Flutter project.
+## Objective
+Create an app displaying 16 images in a harmonious grid layout. Features include popup details, subtle tap effects, infinite scrolling, placeholders, device responsiveness, and whimsical animations.
 
-## Getting Started
+## Features
+- Visual Harmony: Elegant grid layout showcasing 16 images.
+- Popup Details: Sophisticated popups on image tap.
+- Subtle Tap: Delicate zoom-out effect on image tap.
+- Infinite Scrolling: Seamless image loading with scrolling.
+- Image Placeholders: Smooth transition while fetching images.
+- Responsive Design: Adaptability across screen sizes.
+- Whimsical Animations: Artful animations for visual appeal.
 
-This project is a starting point for a Flutter application.
+## File Structure
+- lib/
+    - shared
+        - app_constants.dart
+    - views
+        - widgets
+            - app_network_image.dart
+            - image_gallery.dart
+        - gallery_view.dart
+    - main.dart
+    
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
