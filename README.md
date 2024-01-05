@@ -23,4 +23,9 @@ Create an app displaying 16 images in a harmonious grid layout. Features include
         - gallery_view.dart
     - main.dart
     
+## Video
+
+
+https://github.com/Lord-Chris/Fancy-Gallery/assets/58702861/c05084e0-ac57-43a5-98af-db79d1535f10
+
 
