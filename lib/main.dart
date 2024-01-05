@@ -1,5 +1,5 @@
-import 'package:fancy_gallery/ui/app_constants.dart';
-import 'package:fancy_gallery/ui/gallery_view.dart';
+import 'package:fancy_gallery/shared/app_constants.dart';
+import 'package:fancy_gallery/views/gallery_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {

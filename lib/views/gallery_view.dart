@@ -1,6 +1,6 @@
-import 'package:fancy_gallery/ui/app_constants.dart';
-import 'package:fancy_gallery/ui/app_network_image.dart';
-import 'package:fancy_gallery/ui/image_dialog.dart';
+import 'package:fancy_gallery/shared/app_constants.dart';
+import 'package:fancy_gallery/views/widgets/app_network_image.dart';
+import 'package:fancy_gallery/views/widgets/image_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
@@ -87,5 +87,3 @@ class GalleryView extends HookWidget {
     );
   }
 }
-/*
-*/

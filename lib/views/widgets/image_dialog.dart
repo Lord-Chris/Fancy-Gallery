@@ -37,9 +37,7 @@ class ImageDialog extends StatelessWidget {
                   const SizedBox(height: 1),
                   Text(
                     'Author: Mr(s) person ${image.split('/')[4]}',
-                    style: const TextStyle(
-                      fontSize: 10,
-                    ),
+                    style: const TextStyle(fontSize: 10),
                   ),
                   const SizedBox(height: 8),
                   Text(
@@ -71,8 +69,7 @@ class ImageSection extends StatefulWidget {
 class _ImageSectionState extends State<ImageSection>
     with SingleTickerProviderStateMixin {
   final _transformationController = TransformationController();
-
-  TapDownDetails? _doubleTapDetails;
+  TapDownDetails? _tapDetails;
   AnimationController? _animationController;
   Animation<Matrix4>? _animation;
 
@@ -98,8 +95,8 @@ class _ImageSectionState extends State<ImageSection>
     return Animate(
       effects: const [FlipEffect()],
       child: GestureDetector(
-        onDoubleTapDown: (d) => _doubleTapDetails = d,
-        onDoubleTap: _handleDoubleTap,
+        onTapDown: (d) => _tapDetails = d,
+        onTap: _handleTap,
         child: Center(
           child: InteractiveViewer(
             transformationController: _transformationController,
@@ -115,9 +112,9 @@ class _ImageSectionState extends State<ImageSection>
     );
   }
 
-  void _handleDoubleTap() {
+  void _handleTap() {
     Matrix4 endMatrix;
-    Offset position = _doubleTapDetails!.localPosition;
+    Offset position = _tapDetails!.localPosition;
 
     if (_transformationController.value != Matrix4.identity()) {
       endMatrix = Matrix4.identity();
