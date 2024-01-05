@@ -87,6 +87,11 @@ class AppNetworkImage extends StatelessWidget {
                     isCircular ? null : BorderRadius.circular(borderRadius),
                 shape: isCircular ? BoxShape.circle : BoxShape.rectangle,
               ),
+              child: const Icon(
+                Icons.warning,
+                color: Colors.white,
+                size: 40,
+              ),
             );
         }
       },

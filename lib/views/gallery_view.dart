@@ -9,6 +9,18 @@ import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
 class GalleryView extends HookWidget {
   const GalleryView({super.key});
 
+  /// Hook that manages a [PagingController] for paginated data loading.
+  ///
+  /// This hook initializes and manages a [PagingController] for handling
+  /// paginated data loading in the application. It generates and appends pages
+  /// of data to the controller, triggering loading and appending of subsequent
+  /// pages when needed. The hook sets up a listener for page requests and
+  /// asynchronously loads and appends the next set of data.
+  ///
+  /// The hook generates a specified length of data per loading cycle and
+  /// asynchronously simulates loading for the next set of data after a delay
+  /// of 200 milliseconds. The [PagingController] is disposed of when the hook
+  /// is unmounted, ensuring proper resource cleanup.
   PagingController<int, String> _usePagingController() {
     final cont = useState(PagingController<int, String>(firstPageKey: 1)).value;
 
