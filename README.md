@@ -1,31 +1,18 @@
-# Immersive Gallery App
-
-## Objective
-Create an app displaying 16 images in a harmonious grid layout. Features include popup details, subtle tap effects, infinite scrolling, placeholders, device responsiveness, and whimsical animations.
+# Fancy Gallery
+Fancy Gallery is a gallery app that shows an infinite amount of images, and each image can be previewed .This repository contains the source code for the Fancy Gallery mobile application
 
 ## Features
-- Visual Harmony: Elegant grid layout showcasing 16 images.
-- Popup Details: Sophisticated popups on image tap.
-- Subtle Tap: Delicate zoom-out effect on image tap.
-- Infinite Scrolling: Seamless image loading with scrolling.
-- Image Placeholders: Smooth transition while fetching images.
+- Infinite Scrolling: Grid scroll layout showing infinite images.
+- Zoom In/Out: Pinch to zoom in/out.
+- Image Details: Tap on image to view details.
 - Responsive Design: Adaptability across screen sizes.
-- Whimsical Animations: Artful animations for visual appeal.
 
-## File Structure
-- lib/
-    - shared
-        - app_constants.dart
-    - views
-        - widgets
-            - app_network_image.dart
-            - image_gallery.dart
-        - gallery_view.dart
-    - main.dart
-    
-## Video
+## Tech Stack
+The Fancy Gallery mobile app is built using the following technologies:
 
+- [Flutter](https://flutter.dev/), a cross-platform mobile development framework by Google.
+- [Flutter Animate](https://pub.dev/packages/flutter_animate), a Flutter package for animations.
+- [Lorem Picsum](https://picsum.photos/), a free image placeholder service.
 
+## Video Demo
 https://github.com/Lord-Chris/Fancy-Gallery/assets/58702861/c05084e0-ac57-43a5-98af-db79d1535f10
-
-
