@@ -14,7 +14,7 @@ The Fancy Gallery mobile app is built using the following technologies:
 - [Flutter Animate](https://pub.dev/packages/flutter_animate), a Flutter package for animations.
 - [Lorem Picsum](https://picsum.photos/), a free image placeholder service.
 
-**Talk Stream works on iOS, Android, and Windows.*
+**Fancy Gallery can be previewed on iOS and Android.*
 
 ## Video Demo
 https://github.com/Lord-Chris/Fancy-Gallery/assets/58702861/c05084e0-ac57-43a5-98af-db79d1535f10
